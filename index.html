@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your time</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="listbox">listbox</h1>
+        <div class="main__one" onclick="click1()">time</div>
+        <div class="main__two" onclick="click2()">text</div>
+        <div class="main__three" onclick="click3()">maytinh</div>
+    </div>
+    <div class="modalone">
+        <div class="layoutone">
+            <div class="timemain">
+               <div class="icon" onclick="back1()">
+                    <i id="iconx" class="fa-solid fa-xmark"></i>
+               </div>
+                <div class="head">
+                    <h1 class="head__time">your time has come</h1>
+                    <div id="time"></div>
+                    <div id="date"></div>
+                 </div> 
+            </div>
+        </div>
+    </div>
+    <div class="modaltwo">
+        <div class="layoutone">
+            <div class="word">
+                <div class="icon" onclick="back2()">
+                    <i id="iconx" class="fa-solid fa-xmark"></i>
+               </div>
+                <p id="word-items" contenteditable="true" >Nhập gì đó</p>
+            </div>
+        </div>
+    </div>
+   <div class="modalthree">
+        <div class="layouthree">
+            <div class="maytinh">
+                <div class="icon" onclick="back3()">
+                    <i id="iconx" class="fa-solid fa-xmark"></i>
+               </div>
+               <div class="maytinh__items">
+                    <input type="number" class="nhap1">
+                    <div class="pheptinh">
+                        <button class="pheptinh__items" conclick="setpheptinh('+')">+</button>
+                        <button class="pheptinh__items" onclick="setpheptinh('-')">-</button>
+                        <button class="pheptinh__items" onclick="setpheptinh('*')">x</button>
+                        <button class="pheptinh__items" onclick="setpheptinh('/')">:</button>
+                    </div>
+                    <input type="number" class="nhap2"><br>
+                    <button class="dapan" onclick="dapan()">=</button>
+                    <div class="ketqua">ketqua</div>
+               </div>
+            </div>
+        </div>
+</body>
+</html>
